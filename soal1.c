@@ -36,11 +36,16 @@ int main() {
         printf("%d ", arr[i]);
     }
     if (size % 2 == 1) {
-        median = arr[size / 2];
+        median = arr[(size - 1) / 2];
         printf("MEDIAN %g", median);
     } else {
-        median = (arr[size / 2 + 1] + arr[size / 2]) / 2.0f;
-        printf("MEDIAN %.2f", median);
+        median = (arr[(size - 1) / 2 + 1] + arr[(size - 1) / 2]) / 2.0f;
+        if ((arr[(size-1)/2] + arr[(size-1)/2+1])%2 == 0){
+            printf("MEDIAN %g", median);
+        }
+        else {
+            printf("MEDIAN %.2f", median);
+        }
     }
     return 0;
 }
