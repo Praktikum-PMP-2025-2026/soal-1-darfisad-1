@@ -40,12 +40,13 @@ int main() {
         printf("MEDIAN %g", median);
     } else {
         median = (arr[(size - 1) / 2 + 1] + arr[(size - 1) / 2]) / 2.0f;
-        if ((arr[(size-1)/2] + arr[(size-1)/2+1])%2 == 0){
-            printf("MEDIAN %g", median);
-        }
-        else {
-            printf("MEDIAN %.2f", median);
-        }
+        printf("MEDIAN %.2f", median);
+        // if ((arr[(size-1)/2] + arr[(size-1)/2+1])%2 == 0){
+        //     printf("MEDIAN %g", median);
+        // }
+        // else {
+        //     printf("MEDIAN %.2f", median);
+        // }
     }
     return 0;
 }
